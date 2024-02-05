@@ -27,7 +27,7 @@ runs:
     - name: Download fmt from repository
       if: runner.os == 'Linux'
       shell: bash
-      run: sudo apt install -y libglfw3 libglfw3-dev libglm-dev nlohmann-json3-dev
+      run: sudo apt install -y libglfw3 libglfw3-dev libglm-dev nlohmann-json3-dev libgl1-mesa-dev
 
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
